@@ -75,17 +75,21 @@ main, .site-header, .site-footer {
 .filters button.active { background: var(--text); color: var(--bg); border-color: var(--text); }
 
 /* Project grid */
+body { overflow-x: clip; }
 .grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 40px 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 12px;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
   margin-bottom: 96px;
 }
-.card { text-decoration: none; }
+.card { flex: 1 1 26%; text-decoration: none; transition: flex-grow 0.5s ease; }
+.card:hover { flex-grow: 3; }
 .card[hidden] { display: none; }
-.card-image { aspect-ratio: 4 / 3; overflow: hidden; background: var(--card-bg); }
-.card-image img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
-.card:hover .card-image img { transform: scale(1.03); }
+.card-image { height: 26vw; overflow: hidden; background: var(--card-bg); }
+.card-image img { width: 100%; height: 100%; object-fit: cover; }
+.card-text { padding: 0 16px; }
 .card-text h3 { margin: 12px 0 0; font-size: 18px; font-weight: 600; }
 .card-text p { margin: 0; color: var(--muted); font-size: 15px; }
 
@@ -133,6 +137,7 @@ main, .site-header, .site-footer {
   main, .site-header, .site-footer { padding-left: 16px; padding-right: 16px; }
   .site-header nav a { margin-left: 16px; }
   .intro { padding: 48px 0 40px; }
-  .grid { grid-template-columns: 1fr; }
+  .card { flex-basis: 100%; }
+  .card-image { height: 60vw; }
   .project-body { grid-template-columns: 1fr; gap: 24px; }
 }
