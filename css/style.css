@@ -7,7 +7,7 @@
   --accent: #6B8ADB;
   --card-bg: #ebe9e4;
   --max-width: 1200px;
-  --font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font: "Jost", Jost, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
