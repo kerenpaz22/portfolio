@@ -61,7 +61,7 @@ main, .site-header, .site-footer {
 }
 
 /* Filters */
-.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 24px; }
+.filters { display: none; }
 .filters button {
   font: inherit;
   font-size: 14px;
