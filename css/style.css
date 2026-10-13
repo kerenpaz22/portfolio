@@ -40,7 +40,7 @@ main, .site-header, .site-footer {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.logo { font-size: 100px; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; }
+.logo { font-size: 100px; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; pointer-events: none; }
 #work { padding-top: 40px; }
 .site-header nav a { margin-left: 24px; text-decoration: none; }
 
