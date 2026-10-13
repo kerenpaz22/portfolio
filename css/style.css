@@ -1,8 +1,8 @@
 /* Change these to restyle the whole site. */
 :root {
   --bg: #FCFBF7;
-  --text: #362C12;
-  --muted: #6b6b6b;
+  --text: #38548F;
+  --muted: #D6BC67;
   --line: #362C12;
   --accent: #D6D1C7;
   --card-bg: #ebe9e4;
@@ -40,7 +40,7 @@ main, .site-header, .site-footer {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.logo { font-size: 150px; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; }
+.logo { font-size: 100px; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; }
 #work { padding-top: 40px; }
 .site-header nav a { margin-left: 24px; text-decoration: none; }
 
