@@ -1,10 +1,10 @@
 /* Change these to restyle the whole site. */
 :root {
   --bg: #FCFBF7;
-  --text: #38548F;
-  --muted: #D6BC67;
+  --text: #000000;
+  --muted: #000000;
   --line: #362C12;
-  --accent: #D6D1C7;
+  --accent: #C22B2B;
   --card-bg: #ebe9e4;
   --max-width: 1200px;
   --font: "Jost", Jost, Arial, sans-serif;
