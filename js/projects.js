@@ -6,6 +6,29 @@
 // ─────────────────────────────────────────────────────────────
 
 const PROJECTS = [
+    {
+    id: "lamp",
+    title: "Desk Lamp",
+    year: "2025",
+    category: "Lighting",
+    cover: "images/projects/desk-lamp/cover.jpg",
+    summary: "One sentence about the project.",
+    description: [
+      "First paragraph: the brief or problem.",
+      "Second paragraph: your process.",
+      "Third paragraph: the result and what you learned."
+    ],
+    details: {
+      Role: "Individual project",
+      Duration: "8 weeks",
+      Materials: "Aluminium, oak",
+      Tools: "Rhino, KeyShot"
+    },
+    gallery: [
+      { src: "images/projects/lamp/cover.jpg", caption: "Final design" },
+      { src: "images/projects/lamp/second.jpg", caption: "Early sketches" }
+    ]
+  },
   {
     id: "example-chair",              // short name with no spaces, used in the page link
     title: "Example Chair",
