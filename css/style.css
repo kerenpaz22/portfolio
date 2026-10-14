@@ -231,3 +231,11 @@ body:has(#work) .site-footer {
   body:has(#work) .site-footer { max-width: none; padding-left: 16px; padding-right: 16px; }
   #work { padding-top: 40px; }
 }
+
+/* ===== Project page: smaller photos ===== */
+.project-cover { max-width: 800px; margin: 0 auto; }
+.gallery { display: block; columns: 2; column-gap: 24px; }
+.gallery figure { break-inside: avoid; margin-bottom: 24px; }
+@media (max-width: 700px) {
+  .gallery { columns: 1; }
+}
