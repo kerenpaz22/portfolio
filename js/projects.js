@@ -25,8 +25,7 @@ const PROJECTS = [
       Tools: "Rhino, KeyShot"
     },
         gallery: [
-      { src: "images/projects/lamp/cover.JPEG", caption: "Final design" },
-      { src: "images/projects/lamp/two.JPG", caption: "Early sketches" },
+      { src: "images/projects/lamp/two.JPG", caption: "" },
       { src: "images/projects/lamp/three.JPG", caption: "" },
       { src: "images/projects/lamp/five.JPEG", caption: "" },
       { src: "images/projects/lamp/six.JPG", caption: "" },
