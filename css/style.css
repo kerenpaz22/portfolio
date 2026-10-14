@@ -43,7 +43,7 @@ main, .site-header, .site-footer {
   padding-left: 40px;
   padding-right: 40x;
 }
-.logo { font-size: 100px; font-weight: 300; text-decoration: none; letter-spacing: 2em; pointer-events: none; }
+.logo { font-size: 100px; font-weight: 300; text-decoration: none; letter-spacing: 1em; pointer-events: none; }
 #work { margin-top: 100vh; margin-top: 100svh; padding-top: 0; }
 body:has(#work) .site-header { position: absolute; top: 0; left: 0; right: 0; }
 .site-header nav a { margin-left: 24px; text-decoration: none; }
