@@ -167,3 +167,67 @@ html { scroll-behavior: smooth; }
   0%, 100% { transform: translateY(0); opacity: 1; }
   50% { transform: translateY(10px); opacity: 0.4; }
 }
+
+/* ===== Split-name layout (home page) ===== */
+:root {
+  --center-width: 40vw;   /* width of the middle column with the images */
+  --name-size: 5vw;       /* size of KEREN and PAZ */
+  --side-gap: 40px;       /* space between the names and the screen edges */
+}
+
+/* KEREN on the left, PAZ on the right, fixed in the vertical middle */
+.split-name {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: var(--name-size);
+  font-weight: 300;
+  letter-spacing: 0.3em;
+  line-height: 1;
+  pointer-events: none;
+  z-index: 5;
+}
+.split-left { left: var(--side-gap); }
+.split-right { right: var(--side-gap); margin-right: -0.3em; }
+
+/* Menu stays in the top-right corner */
+body:has(#work) .site-header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 10;
+  pointer-events: none;
+  padding-right: var(--side-gap);
+}
+body:has(#work) .site-header nav { margin-left: auto; pointer-events: auto; }
+body:has(#work) .logo { display: none; }
+.scroll-hint { display: none; }
+
+/* Middle column: images, about, contact, footer */
+body:has(#work) main,
+body:has(#work) .site-footer {
+  max-width: var(--center-width);
+  padding-left: 0;
+  padding-right: 0;
+}
+#work { margin-top: 0; padding-top: 120px; }
+.grid {
+  flex-direction: column;
+  width: auto;
+  margin-left: 0;
+  gap: 80px;
+}
+.card { flex: none; }
+.card-image { height: auto; }
+.card-image img { height: auto; transition: transform 0.4s ease; }
+.card:hover .card-image img { transform: scale(1.03); }
+
+/* Phones: names go back to the top, images full width */
+@media (max-width: 700px) {
+  .split-names { display: flex; justify-content: center; gap: 0.3em; padding: 24px 16px 0; }
+  .split-name { position: static; transform: none; font-size: 36px; }
+  .split-right { margin-right: 0; }
+  body:has(#work) .site-header { position: static; pointer-events: auto; padding-right: 16px; }
+  body:has(#work) main,
+  body:has(#work) .site-footer { max-width: none; padding-left: 16px; padding-right: 16px; }
+  #work { padding-top: 40px; }
+}
