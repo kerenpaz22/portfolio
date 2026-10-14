@@ -140,6 +140,7 @@ body { overflow-x: clip; }
   .card { flex-basis: 100%; }
   .card-image { height: 60vw; }
   .project-body { grid-template-columns: 1fr; gap: 24px; }
+    .logo { font-size: 40px; }
 }
 
 /* Scroll hint (arrow at the bottom of the first screen) */
