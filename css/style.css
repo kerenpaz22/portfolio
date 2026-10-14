@@ -41,7 +41,7 @@ main, .site-header, .site-footer {
   padding-bottom: 24px;
   max-width: none;
   padding-left: 40px;
-  padding-right: 40x;
+  padding-right: 40px;
 }
 .logo { font-size: 80px; font-weight: 300; text-decoration: none; letter-spacing: 0.3em; pointer-events: none; }
 #work { margin-top: 100vh; margin-top: 100svh; padding-top: 0; }
@@ -171,7 +171,7 @@ html { scroll-behavior: smooth; }
 /* ===== Split-name layout (home page) ===== */
 :root {
   --center-width: 40vw;   /* width of the middle column with the images */
-  --name-size: 5vw;       /* size of KEREN and PAZ */
+  --name-size: 4vw;       /* size of KEREN and PAZ */
   --side-gap: 40px;       /* space between the names and the screen edges */
 }
 
@@ -214,7 +214,7 @@ body:has(#work) .site-footer {
   flex-direction: column;
   width: auto;
   margin-left: 0;
-  gap: 80px;
+  gap: 60px;
 }
 .card { flex: none; }
 .card-image { height: auto; }
