@@ -11,7 +11,7 @@ const PROJECTS = [
     title: "Desk Lamp",
     year: "2025",
     category: "Lighting",
-    cover: "images/projects/lamp/cover.jpg",
+    cover: "images/projects/lamp/cover.JPEG",
     summary: "One sentence about the project.",
     description: [
       "First paragraph: the brief or problem.",
@@ -24,13 +24,13 @@ const PROJECTS = [
       Materials: "Aluminium, oak",
       Tools: "Rhino, KeyShot"
     },
-    gallery: [
-      { src: "images/projects/lamp/cover.jpg", caption: "Final design" },
-      { src: "images/projects/lamp/two.jpg", caption: "Early sketches" },
-             { src: "images/projects/lamp/three.jpg", caption: "Early sketches" },
-             { src: "images/projects/lamp/five.jpg", caption: "Early sketches" },
-             { src: "images/projects/lamp/six.jpg", caption: "Early sketches" },
-                     { src: "images/projects/lamp/seven.jpg", caption: "Early sketches" }
+        gallery: [
+      { src: "images/projects/lamp/cover.JPEG", caption: "Final design" },
+      { src: "images/projects/lamp/two.JPG", caption: "Early sketches" },
+      { src: "images/projects/lamp/three.JPG", caption: "" },
+      { src: "images/projects/lamp/five.JPEG", caption: "" },
+      { src: "images/projects/lamp/six.JPG", caption: "" },
+      { src: "images/projects/lamp/seven.JPG", caption: "" }
     ]
   },
   {
