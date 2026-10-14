@@ -11,7 +11,7 @@ const PROJECTS = [
     title: "Desk Lamp",
     year: "2025",
     category: "Lighting",
-    cover: "images/projects/desk-lamp/cover.jpg",
+    cover: "images/projects/lamp/cover.jpg",
     summary: "One sentence about the project.",
     description: [
       "First paragraph: the brief or problem.",
