@@ -26,7 +26,11 @@ const PROJECTS = [
     },
     gallery: [
       { src: "images/projects/lamp/cover.jpg", caption: "Final design" },
-      { src: "images/projects/lamp/second.jpg", caption: "Early sketches" }
+      { src: "images/projects/lamp/two.jpg", caption: "Early sketches" },
+             { src: "images/projects/lamp/three.jpg", caption: "Early sketches" },
+             { src: "images/projects/lamp/five.jpg", caption: "Early sketches" },
+             { src: "images/projects/lamp/six.jpg", caption: "Early sketches" },
+                     { src: "images/projects/lamp/seven.jpg", caption: "Early sketches" }
     ]
   },
   {
