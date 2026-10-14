@@ -7,7 +7,7 @@
   --accent: #C22B2B;
   --card-bg: #ebe9e4;
   --max-width: 1200px;
-  --font: "Nanum Myeongjo", Georgia, serif;
+   --font: "Poppins", Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
