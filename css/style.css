@@ -214,7 +214,7 @@ body:has(#work) .site-footer {
   flex-direction: column;
   width: auto;
   margin-left: 0;
-  gap: 60px;
+  gap: 30px;
 }
 .card { flex: none; }
 .card-image { height: auto; }
