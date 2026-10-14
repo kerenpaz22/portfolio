@@ -187,8 +187,8 @@ html { scroll-behavior: smooth; }
   pointer-events: none;
   z-index: 5;
 }
-.split-left { left: var(--side-gap); }
-.split-right { right: var(--side-gap); margin-right: -0.3em; }
+.split-left  { left:  calc((100% - var(--center-width)) / 4); transform: translate(-50%, -50%); padding-left: 0.3em; }
+.split-right { right: calc((100% - var(--center-width)) / 4); transform: translate(50%, -50%);  padding-left: 0.3em; }
 
 /* Menu stays in the top-right corner */
 body:has(#work) .site-header {
@@ -225,7 +225,7 @@ body:has(#work) .site-footer {
 @media (max-width: 700px) {
   .split-names { display: flex; justify-content: center; gap: 0.3em; padding: 24px 16px 0; }
   .split-name { position: static; transform: none; font-size: 36px; }
-  .split-right { margin-right: 0; }
+  .split-left, .split-right { padding-left: 0; }
   body:has(#work) .site-header { position: static; pointer-events: auto; padding-right: 16px; }
   body:has(#work) main,
   body:has(#work) .site-footer { max-width: none; padding-left: 16px; padding-right: 16px; }
