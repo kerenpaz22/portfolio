@@ -40,7 +40,7 @@ main, .site-header, .site-footer {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-.logo { font-size: 100px; font-weight: 700; text-decoration: none; letter-spacing: 0.02em; pointer-events: none; }
+.logo { font-size: 100px; font-weight: 800; text-decoration: none; letter-spacing: 0.05em; pointer-events: none; }
 #work { margin-top: 100vh; margin-top: 100svh; padding-top: 0; }
 body:has(#work) .site-header { position: absolute; top: 0; left: 0; right: 0; }
 .site-header nav a { margin-left: 24px; text-decoration: none; }
