@@ -39,6 +39,9 @@ main, .site-header, .site-footer {
   align-items: center;
   padding-top: 24px;
   padding-bottom: 24px;
+  max-width: none;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .logo { font-size: 100px; font-weight: 300; text-decoration: none; letter-spacing: 0em; pointer-events: none; }
 #work { margin-top: 100vh; margin-top: 100svh; padding-top: 0; }
