@@ -85,7 +85,7 @@ body { overflow-x: clip; }
   gap: 40px 12px;
   width: 100vw;
   margin-left: calc(50% - 50vw);
-  margin-bottom: 96px;
+  margin-bottom: 200px;
 }
 .card { flex: 1 1 26%; text-decoration: none; transition: flex-grow 0.5s ease; }
 .card:hover { flex-grow: 3; }
