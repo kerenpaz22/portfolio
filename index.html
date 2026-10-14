@@ -9,85 +9,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap">
 </head>
 <body>
-    <!-- ===== Intro animation (start) ===== -->
-  <style>
-    #intro-screen {
-      position: fixed; inset: 0; z-index: 1000;
-      background: #000; color: #fff;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center;
-      transition: transform 0.6s cubic-bezier(0.7, 0, 0.3, 1);
-    }
-    #intro-screen.lift { transform: translateY(-100%); }
-    #intro-name, .hero-name {
-      font-family: var(--font); font-weight: 700; letter-spacing: 0.1em;
-      font-size: clamp(40px, 8vw, 100px); line-height: 1.1;
-    }
-    #intro-subtitle, .hero-subtitle {
-      font-family: var(--font); font-weight: 400; letter-spacing: 0.3em;
-      font-size: clamp(14px, 2vw, 25px); margin-top: 18px;
-      min-height: 1.4em;
-    }
-    .typing::after {
-      content: "|"; font-weight: 300; margin-left: 4px; position: absolute;
-      animation: intro-blink 0.8s steps(1) infinite;
-    }
-    @keyframes intro-blink { 50% { opacity: 0; } }
-    body.intro-playing { overflow: hidden; }
-  </style>
-  <div id="intro-screen">
-    <span id="intro-name"></span>
-    <span id="intro-subtitle"></span>
-  </div>
-  <script>
-    (function () {
-      var LINE_1 = "KEREN PAZ";          // first line (big)
-      var LINE_2 = "INDUSTRIAL DESIGN";  // second line (small)
-           var START_DELAY = 200;   // wait before typing starts (1000 = 1 second)
-      var TYPE_SPEED = 60;     // time per letter
-      var LINE_GAP = 200;      // wait between the two lines
-      var PAUSE = 600;         // wait after typing, before the screen lifts
-
-      var screen = document.getElementById("intro-screen");
-      var line1 = document.getElementById("intro-name");
-      var line2 = document.getElementById("intro-subtitle");
-
-      // Skip when coming back from a menu link (index.html#work etc.)
-      if (location.hash || window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-        screen.remove();
-        return;
-      }
-
-      document.body.classList.add("intro-playing");
-
-      function type(el, text, done) {
-        var i = 0;
-        el.classList.add("typing");
-        (function next() {
-          i++;
-          el.textContent = text.slice(0, i);
-          if (i < text.length) setTimeout(next, TYPE_SPEED);
-          else done();
-        })();
-      }
-
-      setTimeout(function () {
-        type(line1, LINE_1, function () {
-          setTimeout(function () {
-            line1.classList.remove("typing");
-            type(line2, LINE_2, function () { setTimeout(lift, PAUSE); });
-          }, LINE_GAP);
-        });
-      }, START_DELAY);
-
-      function lift() {
-        screen.classList.add("lift");
-        document.body.classList.remove("intro-playing");
-        setTimeout(function () { screen.remove(); }, 700);
-      }
-    })();
-  </script>
-  <!-- ===== Intro animation (end) ===== -->
   <header class="site-header">
     <a class="logo" href="index.html">KEREN PAZ</a>
     <nav>
@@ -96,23 +17,7 @@
       <a href="index.html#contact">CONTACT</a>
     </nav>
   </header>
-    <!-- ===== Name in the middle of the first screen (start) ===== -->
-  <style>
-    .hero {
-      position: absolute; top: 0; left: 0; right: 0;
-      height: 100vh; height: 100svh;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      text-align: center;
-      pointer-events: none;
-    }
-    body:has(#work) .logo { display: none; }
-    body:has(#work) .site-header nav { margin-left: auto; }
-  </style>
-  <div class="hero">
-    <span class="hero-name">KEREN PAZ</span>
-    <span class="hero-subtitle">INDUSTRIAL DESIGN</span>
-  </div>
-  <!-- ===== Name in the middle of the first screen (end) ===== -->
+   
     <a class="scroll-hint" href="#work" aria-label="Scroll to projects">
     SEE MY WORK
     <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 4v16M5 13l7 7 7-7"/></svg>
