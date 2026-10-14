@@ -16,7 +16,7 @@
       background: #000; color: #fff;
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       text-align: center;
-      transition: transform 0.9s cubic-bezier(0.7, 0, 0.3, 1);
+      transition: transform 0.6s cubic-bezier(0.7, 0, 0.3, 1);
     }
     #intro-screen.lift { transform: translateY(-100%); }
     #intro-name {
@@ -43,10 +43,10 @@
     (function () {
       var LINE_1 = "KEREN PAZ";          // first line (big)
       var LINE_2 = "INDUSTRIAL DESIGN";  // second line (small)
-      var START_DELAY = 500;   // wait before typing starts (1000 = 1 second)
-      var TYPE_SPEED = 130;    // time per letter
-      var LINE_GAP = 400;      // wait between the two lines
-      var PAUSE = 1200;        // wait after typing, before the screen lifts
+           var START_DELAY = 200;   // wait before typing starts (1000 = 1 second)
+      var TYPE_SPEED = 60;     // time per letter
+      var LINE_GAP = 200;      // wait between the two lines
+      var PAUSE = 600;         // wait after typing, before the screen lifts
 
       var screen = document.getElementById("intro-screen");
       var line1 = document.getElementById("intro-name");
@@ -83,7 +83,7 @@
       function lift() {
         screen.classList.add("lift");
         document.body.classList.remove("intro-playing");
-        setTimeout(function () { screen.remove(); }, 1000);
+        setTimeout(function () { screen.remove(); }, 700);
       }
     })();
   </script>
