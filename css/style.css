@@ -247,3 +247,11 @@ body:has(#work) .site-footer {
 /* On every page except the home page, your name links back home */
 body:not(:has(#work)) .logo { pointer-events: auto; }
 .logo:hover { color: inherit; }
+
+/* ===== Footer at the left edge, lined up with the name ===== */
+.site-footer,
+body:has(#work) .site-footer { max-width: none; margin: 0; padding-left: 40px; }
+@media (max-width: 700px) {
+  .site-footer,
+  body:has(#work) .site-footer { padding-left: 16px; }
+}
