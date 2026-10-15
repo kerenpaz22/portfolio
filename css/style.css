@@ -233,7 +233,7 @@ body:has(#work) .site-footer {
 }
 
 /* ===== Project page: smaller photos ===== */
-.project-cover { max-width: 800px; margin: 0 auto; }
+.project-cover { display: none; }
 .gallery { display: block; columns: 2; column-gap: 24px; }
 .gallery figure { break-inside: avoid; margin-bottom: 24px; }
 @media (max-width: 700px) {
