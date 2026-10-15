@@ -275,3 +275,9 @@ body:has(#work) .site-footer { max-width: none; margin: 0; padding-left: 40px; }
   .about-page { flex-direction: column; gap: 24px; padding-right: 16px; }
   .about-photo { width: 100%; order: -1; }
 }
+
+/* ===== First image fills the first screen (computers only) ===== */
+@media (min-width: 701px) {
+  .card:first-child .card-image { aspect-ratio: auto; height: calc(100vh - 130px); }
+  .card:first-child .card-image img { object-position: center 75%; }
+}
