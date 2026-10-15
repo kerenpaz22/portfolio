@@ -209,7 +209,7 @@ body:has(#work) .site-footer {
   padding-left: 0;
   padding-right: 0;
 }
-#work { margin-top: 0; padding-top: 120px; }
+#work { margin-top: 0; padding-top: 40px; }
 .grid {
   flex-direction: column;
   width: auto;
