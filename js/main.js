@@ -10,7 +10,7 @@ function escapeHtml(text) {
 function projectCard(p) {
   return `
     <a class="card" href="project.html?id=${encodeURIComponent(p.id)}" data-category="${escapeHtml(p.category)}">
-      <div class="card-image"><img src="${escapeHtml(p.cover)}" alt="${escapeHtml(p.title)}" loading="lazy"></div>
+           <div class="card-image">${/\.(mp4|webm|mov)$/i.test(p.cover) ? `<video src="${escapeHtml(p.cover)}" autoplay muted loop playsinline></video>` : `<img src="${escapeHtml(p.cover)}" alt="${escapeHtml(p.title)}" loading="lazy">`}</div>
       <div class="card-text">
         <h3>${escapeHtml(p.title)}</h3>
         <p>${escapeHtml(p.category)} · ${escapeHtml(p.year)}</p>
