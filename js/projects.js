@@ -50,7 +50,7 @@ const PROJECTS = [
     },
         gallery: [
       { src: "images/projects/lamp/two.JPG", caption: "" },
-      { src: "images/projects/lamp/three.JPG", caption: "" },
+      { src: "images/projects/lamp/cover.JPEG", caption: "" },
       { src: "images/projects/lamp/five.JPEG", caption: "" },
       { src: "images/projects/lamp/six.JPG", caption: "" },
       { src: "images/projects/lamp/seven.JPG", caption: "" }
