@@ -6,9 +6,33 @@
 // ─────────────────────────────────────────────────────────────
 
 const PROJECTS = [
+      {
+    id: "CHAIR",
+    title: "CHAIR",
+    year: "2026",
+    category: "Furniture",
+    cover: "images/projects/chair/cover.PNG",
+    summary: "One sentence about the project.",
+    description: [
+      "First paragraph: the brief or problem.",
+      "Second paragraph: your process.",
+      "Third paragraph: the result and what you learned."
+    ],
+    details: {
+      Role: "Individual project",
+      Duration: "8 weeks",
+      Materials: "Oak",
+      Tools: "Rhino, KeyShot"
+    },
+    gallery: [
+      { src: "images/projects/chair/two.JPG", caption: "" },
+      { src: "images/projects/chair/three.JPG", caption: "" },
+      { src: "images/projects/chair/four.PNG", caption: "" }
+    ]
+  },
     {
-    id: "lamp",
-    title: "Desk Lamp",
+    id: "LAMP",
+    title: "DESK LAMP",
     year: "2025",
     category: "Lighting",
     cover: "images/projects/lamp/cover.JPEG",
