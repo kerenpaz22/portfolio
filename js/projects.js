@@ -57,28 +57,28 @@ const PROJECTS = [
     ]
   },
   {
-    id: "example-chair",              // short name with no spaces, used in the page link
-    title: "Example Chair",
+     id: "CUPS",
+    title: "CUPS",
     year: "2025",
-    category: "Furniture",
-    cover: "images/projects/example-chair/cover.svg",
-    summary: "A stackable chair made from a single bent sheet of plywood.",
-    // Each paragraph is one string in this list.
+    category: "ceramics",
+    cover: "images/projects/lamp/cover.mp4",
+    summary: "One sentence about the project.",
     description: [
-      "Write the brief here: what problem were you solving, and for whom?",
-      "Then describe your process: research, sketches, models, testing, and what changed along the way.",
-      "End with the outcome and what you learned."
+      "First paragraph: the brief or problem.",
+      "Second paragraph: your process.",
+      "Third paragraph: the result and what you learned."
     ],
     details: {
       Role: "Individual project",
-      Duration: "10 weeks",
-      Materials: "Birch plywood, steel",
-      Tools: "SolidWorks, KeyShot, CNC router"
+      Duration: "8 weeks",
+      Materials: "ceramic",
+      Tools: "Rhino, KeyShot"
     },
-    // Images shown on the project page, in order.
-    gallery: [
-      { src: "images/projects/example-chair/cover.svg", caption: "Final prototype" },
-      { src: "images/projects/example-chair/cover.svg", caption: "Early sketches" }
+        gallery: [
+      { src: "images/projects/cups/one.jpg", caption: "" },
+      { src: "images/projects/cups/two.jpg", caption: "" },
+      { src: "images/projects/cups/three.jpg", caption: "" },
+      { src: "images/projects/cups/four.jpg", caption: "" }
     ]
   },
   {
