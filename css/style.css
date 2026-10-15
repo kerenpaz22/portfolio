@@ -259,3 +259,19 @@ body:has(#work) .site-footer { max-width: none; margin: 0; padding-left: 40px; }
 /* ===== Make the 2nd image on the home page vertical ===== */
 .card:nth-child(2) .card-image { aspect-ratio: 2 / 3; }
 .card:nth-child(2) .card-image img { height: 100%; object-fit: cover; }
+
+/* ===== About page: text on the left, photo on the right ===== */
+.about-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 64px;
+  max-width: none;
+  padding-right: 40px;
+}
+.about-text { max-width: 600px; }
+.about-photo { width: 380px; flex-shrink: 0; }
+@media (max-width: 700px) {
+  .about-page { flex-direction: column; gap: 24px; padding-right: 16px; }
+  .about-photo { width: 100%; order: -1; }
+}
