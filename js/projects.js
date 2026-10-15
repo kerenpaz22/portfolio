@@ -82,22 +82,26 @@ const PROJECTS = [
     ]
   },
   {
-    id: "example-lamp",
-    title: "Example Lamp",
+    id: "STOOL",
+    title: "STOOL",
     year: "2024",
-    category: "Lighting",
-    cover: "images/projects/example-lamp/cover.svg",
-    summary: "A desk lamp whose shade folds flat for shipping.",
+    category: "furniture",
+    cover: "images/projects/stool/cover.jpg",
+    summary: "One sentence about the project.",
     description: [
-      "Replace this text with your own project story."
+      "First paragraph: the brief or problem.",
+      "Second paragraph: your process.",
+      "Third paragraph: the result and what you learned."
     ],
     details: {
-      Role: "Team of 3",
-      Duration: "6 weeks",
-      Materials: "Aluminium, paper"
+      Role: "Individual project",
+      Duration: "8 weeks",
+      Materials: "ceramic",
+      Tools: "Rhino, KeyShot"
     },
-    gallery: [
-      { src: "images/projects/example-lamp/cover.svg", caption: "Lamp in use" }
+        gallery: [
+      { src: "images/projects/stool/two.PNG", caption: "" },
+      { src: "images/projects/stool/three.JPG", caption: "" }
     ]
   },
   {
