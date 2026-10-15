@@ -239,3 +239,11 @@ body:has(#work) .site-footer {
 @media (max-width: 700px) {
   .gallery { columns: 1; }
 }
+
+
+/* ===== About & Contact pages ===== */
+.page { padding-top: 80px; padding-bottom: 160px; max-width: 700px; margin-left: 16px; }
+@media (max-width: 700px) { .page { margin-left: 0; } }
+/* On every page except the home page, your name links back home */
+body:not(:has(#work)) .logo { pointer-events: auto; }
+.logo:hover { color: inherit; }
