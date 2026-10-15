@@ -257,8 +257,8 @@ body:has(#work) .site-footer { max-width: none; margin: 0; padding-left: 40px; }
 }
 
 /* ===== Make the 2nd image on the home page vertical ===== */
-.card:nth-child(2) .card-image { aspect-ratio: 2 / 3; }
-.card:nth-child(2) .card-image img { height: 100%; object-fit: cover; }
+.card:nth-child(1) .card-image { aspect-ratio: 2 / 3; }
+.card:nth-child(1) .card-image img { height: 100%; object-fit: cover; }
 
 /* ===== About page: text on the left, photo on the right ===== */
 .about-page {
