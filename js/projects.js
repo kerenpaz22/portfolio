@@ -61,7 +61,7 @@ const PROJECTS = [
     title: "CUPS",
     year: "2025",
     category: "ceramics",
-    cover: "images/projects/lamp/cover.mp4",
+    cover: "images/projects/cups/cover.mp4",
     summary: "One sentence about the project.",
     description: [
       "First paragraph: the brief or problem.",
