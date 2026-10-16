@@ -285,3 +285,14 @@ body:has(#work) .site-footer { max-width: none; margin: 0; padding-left: 40px; }
 /* ===== Videos as cover images ===== */
 .card-image video { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform 0.4s ease; }
 .card:hover .card-image video { transform: scale(1.03); }
+
+/* ===== Contact page: full-width image with the text centered on it ===== */
+.contact-hero { position: relative; max-width: none; margin: 0; padding: 0; }
+.contact-hero-image { display: block; width: 100%; max-width: none; height: 80vh; object-fit: cover; }
+.contact-hero-text {
+  position: absolute; inset: 0;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+  text-align: center;
+  color: #FFFFFF;          /* text color on the image */
+}
+.contact-hero-text .section-title { color: inherit; }
